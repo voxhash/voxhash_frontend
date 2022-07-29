@@ -1,0 +1,11 @@
+body {
+	color: white;
+	/*linear gradient frmo top right to bottom left*/
+	background: linear-gradient(
+		to bottom left,
+		#1d0f1c,
+		#081b19
+	);
+	background-attachment:fixed;
+	height:100%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<title>VoxHash - Software Made Simple</title>
+		
+		<script src="/js/vendor/jquery-3.6.0.min.js"></script>
+		<script src="/js/vendor/underscore-umd-min.js"></script>
+		<script src="/js/vendor/json2.js"></script>
+		<script src="/js/vendor/backbone-min.js"></script>
+		<script src="/js/vendor/handlebars.min-v4.7.7.js"></script>
+
+		<!-- Include the website and all the views -->
+		<script src="/js/templates.js"></script>
+		<script src="/js/views/AppView.js"></script>
+		<script src="/js/views/SignUpView.js"></script>
+		<script src="/js/views/WelcomeView.js"></script>
+		<script src="/js/routers/VoxHashRouter.js"></script>
+		<script src="/js/VoxHashSite.js"></script>
+
+		<link rel="stylesheet" href="/css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="/css/skeleton.css" type="text/css">
+		<link rel="stylesheet" href="/css/global.css" type="text/css">
+
+		<!-- Initialize the SPA -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				App.initialize();
+				$(window).resize(function(){
+					App.resizeHandler();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="app"></div>
+		<div id="footer"></div>
+	</body>
+</html>
