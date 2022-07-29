@@ -1,0 +1,10 @@
+{
+  "name": "VoxHash",
+  "description": "VoxHash public website",
+  "version": "1.0.0",
+  "author": "Justin Crawford & Zachery",
+  "repo": "git@github.com:voxhash/voxhash_frontend.git",
+  "keywords": [],
+  "dependencies": {
+  }
+}
