@@ -4,29 +4,35 @@
 } */
 
 .title {
-	font-size: 96px;
+	font-size: 72px;
 	font-family: roboto;
+	font-weight: bold;
+	width: 60%;
 }
 
-#titlewhite {
-	color:white;
-}
 #titleblue {
 	background: -webkit-linear-gradient(#FFFEFF, #00D1FF);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-weight: bold;
 }
 
 .titlesubtext {
 	color: #909090;
-	font-size: 32px;
+	font-size: 18px;
+	width: 60%;
 }
 
 .landing {
 	display: flex;
+	margin: 1% 9%;
 }
 
+.landingflatart {
+	float: inline-end;
+}
 
-.landingabt {
-	
+.titletextbox {
+	float: inline-start;
+	padding-top: 8%;
 }
