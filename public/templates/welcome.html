@@ -30,6 +30,7 @@
 				<button type="button" class="greenButton">Learn More</button>
 			</div>
 	</div>
+	</div>
 
 	<!-- "Get In Touch" -->
 	<div class="row flexcolumn" id="getintouch">
@@ -38,16 +39,16 @@
 
 		<div class="row flexrow" id="contactcontainer">
 			<div class="column box">
-				<form action="#">
-					<div class="flexrow">
+				<form action="#" id="contactform">
+					<div class="flexrow inputspacing">
 						<input type="text" name="firstname" placeholder="First Name">
-						<input type="text" name="lastname" placeholder="Last Name">
+						<input type="text" name="lastname" placeholder="Last Name" class="flexcolumn">
 					</div>
-					<div class="flexrow">
+					<div class="flexrow inputspacing">
 						<input type="text" name="email" placeholder="E-Mail">
-						<input type="text" name="phone" placeholder="Phone Number">
+						<input type="text" name="phone" placeholder="Phone Number" class="flexcolumn">
 					</div>
-					<input type="textarea" name="comment" placeholder="What would you like to talk about?" >
+					<textarea form="contactform" name="comment" class="inputspacing" placeholder="What would you like to talk about?"></textarea>
 					<div class="flexrow">
 						<input type="button" value="Send Message">
 					</div>
@@ -56,5 +57,4 @@
 
 			<img src="images/contact.svg" alt="contact graphic" id="contactgraphic">
 		</div>
-	</div>
 </div>

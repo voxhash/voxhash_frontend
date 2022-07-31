@@ -61,6 +61,9 @@
 
 .landing {
 	margin: 1% 9%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .titletextbox {
@@ -88,6 +91,10 @@
 	margin-top: 5%;
 }
 
+#contactcontainer {
+	margin-top: 5%;
+}
+
 #contactcontainer .box {
 	width: 75%;
 }
@@ -102,4 +109,16 @@
 	background: #131728;
 	border-radius: 4px;
 	height: 35px;
+}
+
+#contactcontainer .inputspacing {
+	margin-bottom: 5%;
+}
+
+
+#contactcontainer textarea {
+	width: 100%;
+	border: 2px solid rgba(255,255,255,0.125);
+	background: #131728;
+	border-radius: 4px;
 }
