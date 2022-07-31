@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 
+const directory = __dirname+"/templates";
+
 function bundle() {
 
 	var scripts = [
@@ -31,9 +33,8 @@ function bundle() {
 	];
 
 	var templates = [];
-	console.log("WOWOWOWOOW");
 
-	const files = fs.readdirSync(__dirname+"/templates");
+	const files = fs.readdirSync(directory);
 
 	files.forEach(file => {
 		if (file.endsWith(".html"))
@@ -56,7 +57,7 @@ function bundle() {
 	
 	bundle = "Templates = {};\n";
 	templates.forEach(function(file) {
-		var html = fs.readFileSync(__dirname + '/templates/' + file + '.html', 'utf8');
+		var html = fs.readFileSync(directory + "/" + file + '.html', 'utf8');
 		html = html.replace(/(\r\n|\n|\r)/gm, ' ').replace(/\s+/gm, ' ').replace(/'/gm, "\\'");
 		bundle += "Templates." + file + " = '" + html + "';\n";
 	});
@@ -65,4 +66,14 @@ function bundle() {
 
 }
 
-bundle();
+function watchall() {
+	bundle();
+	console.log("Watching " + directory);
+	fs.watch(directory, (eventType, filename) => {
+		console.log(eventType + ": " +filename);
+		bundle();
+	})
+}
+
+watchall();
+// bundle();
