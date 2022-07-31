@@ -1,15 +1,76 @@
 body {
 	color: white;
-	/*linear gradient frmo top right to bottom left*/
+	/* background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat; */
+	background-size: cover;
+	background-color: #111927;
+	background-image: radial-gradient(to bottom left, rgba(100,31,93,1) 0%, rgba(7,67,111,1) 100%),
+					radial-gradient(farthest-corner to top right, rgba(80,0,67,1) 56%, rgba(7,67,111,1) 100%),
+					radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(219,0,255,1) 100%),
+					radial-gradient(circle, rgba(13,48,46,1) 100%, rgba(32,18,31,1) 100%);
+	/* background-image: 
+		radial-gradient(at 47% 33%, hsl(282.48, 72%, 43%) 0, transparent 59%), 
+		radial-gradient(at 82% 65%, hsl(218.57, 57.99999999999999%, 38%) 0, transparent 55%); */
+}
+/*
+body {
+	color: white;
 	background: linear-gradient(
 		to bottom left,
 		#1d0f1c,
 		#081b19
-	);
+	); 
+	background: radial-gradient(closest-corner at 20% 70%,#07436F 0%,#641F5D, 100%, transparent);
 	background-attachment:fixed;
 	height:100%;
 }
+*/
 
 html * {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.voxButton {
+	background: linear-gradient(
+		to right,
+		#00E0FF,
+		#FF2BF7
+	);
+	color: white;
+	border-radius: 48px;
+	border: none;
+	font-weight: 700;
+	font-size: 10pt;
+}
+
+.greenButton, input[type=button] {
+	background: linear-gradient(#63B855 100%, #47903B 100%);
+	color: white;
+	font-weight: 700;
+	border: none;
+}
+
+.greenButton:hover, input[type=button]:hover {
+	background: linear-gradient(#47903B 100%, #63B855 100%);
+	color: white;
+}
+
+.greenButton:active, input[type=button]:active {
+	background: linear-gradient(#47903B 100%, #63B855 100%);
+	color: white;
+}
+
+.box {
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(10, 11, 28, 0.75);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 2vw;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 400px;
+	height: 400px;
 }

@@ -5,9 +5,45 @@
 
 .title {
 	font-size: 72px;
-	font-family: roboto;
 	font-weight: bold;
+}
+
+.flexrow {
+	display: flex;
+	flex-direction: row;
+}
+
+.flexcolumn {
+	display: flex;
+	flex-direction: column;
+}
+
+#row2title {
+	font-size: 50pt;
+	font-weight: bold;
+}
+
+#row2subtitle {
+	color: #909090;
+	font-size: 15pt;
 	width: 60%;
+	text-align: center;
+	margin-top: 2%;
+}
+
+#ourprojects {
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 10% auto;
+}
+
+#getintouch {
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#projectlist {
+	margin: 5% 26%;
 }
 
 #titleblue {
@@ -17,22 +53,53 @@
 	font-weight: bold;
 }
 
-.titlesubtext {
+#titlesubtext {
 	color: #909090;
 	font-size: 18px;
 	width: 60%;
 }
 
 .landing {
-	display: flex;
 	margin: 1% 9%;
 }
 
-.landingflatart {
-	float: inline-end;
+.titletextbox {
+	padding-top: 8%;
 }
 
-.titletextbox {
-	float: inline-start;
-	padding-top: 8%;
+#introbutton {
+	padding-top: 5%;
+}
+
+.box .titlesubtext {
+	color:#808080;
+	margin-bottom: 10%;
+	font-size: 12pt;
+}
+
+.box .icon {
+	object-fit: cover;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+}
+
+.box h4 {
+	margin-top: 5%;
+}
+
+#contactcontainer .box {
+	width: 75%;
+}
+
+#contactgraphic {
+	width: 45%;
+	margin-left: 10%;
+}
+
+#contactcontainer input[type=text], #contactcontainer input[type=textarea] {
+	border: 2px solid rgba(255,255,255,0.125);
+	background: #131728;
+	border-radius: 4px;
+	height: 35px;
 }
